@@ -1,0 +1,357 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+section{
+    /* overflow-x: hidden; */
+    /* background: url("https://images.getstark.co/marketing/headers/gradient-bg.webp"); */
+
+}
+
+/* navbar coding  */
+nav{
+    background-color: #381fd1;
+    
+}
+
+#navli1:hover{
+    padding-top: 0;
+    padding-bottom: 0;
+    border: 2px solid #381fd1;
+    border-radius: 10px;
+    
+}
+#navli2:hover{
+    
+    border-radius: 10px;
+    border: 2px solid #381fd1;
+    
+}
+#navli3:hover{
+    
+    border-radius: 10px;
+    border: 2px solid #381fd1;
+    
+}
+#navli4:hover{
+    
+    border-radius: 10px;
+    border: 2px solid #381fd1;
+
+}
+#login{
+    
+    /* border-radius: 10px; */
+    /* border: 2px solid #381fd1; */
+    margin-right: 20px;
+    
+
+}
+#login:hover{
+    
+    border-radius: 10px;
+    border: 2px solid #381fd1;
+    
+
+}
+@media (max-width:600px) {
+
+}
+
+
+
+
+#mon>li:hover{
+    background-color: #f3f2fc;;
+}
+a>h6{
+    color: #7e6de9;
+}
+
+#robin{
+    background-color: #1f10a3;
+    width: 100%;
+    overflow: hidden;
+   
+   
+}
+#robin>img{
+  margin-top: -1rem !important;
+  /* position: absolute; */
+/*  */
+  
+}
+
+.container{
+
+}
+#handp{
+    
+    
+    background-color: #f3f2fc;
+    width: 100%;
+    /* margin-top: 100px; */
+    /* margin-bottom: -2000px; */
+    /* position: relative; */
+    
+}
+
+marquee>svg{
+    /* padding-left: 30px; */
+    width: 20%;
+    margin-top: 100px;
+    margin-bottom: 100px ;
+    overflow-x: hidden;
+   
+}
+
+h1>span{
+    background-color: #1f10a3;
+}
+#Rome{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#imgsd{
+    background-image: url('./pengo.webp');
+   
+
+}
+p{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+}
+p>a{
+    font-weight:600;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+@media (min-width:900px) {
+    
+
+
+p>a:hover{
+    font-weight:600;
+    text-decoration: none;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    
+}
+#bx1:hover{
+    border-radius: 10px;
+    border-bottom: 1px solid #381fd1;
+    background-color: #ccc5f6;
+}
+#bx2:hover{
+    border-radius: 10px;
+    border-bottom: 1px solid #381fd1;
+    background-color: #ccc5f6;
+}
+#bx3:hover{
+    border-radius: 10px;
+    border-bottom: 1px solid #381fd1;
+    background-color: #ccc5f6;
+}
+#bx4:hover{
+    border-radius: 10px;
+    border-bottom: 1px solid #381fd1;
+    background-color: #ccc5f6;
+}
+#bx4>a:hover{
+    
+    border-bottom: 4px solid #381fd1;
+    
+}
+#bx3>a:hover{
+    
+    border-bottom: 4px solid #381fd1;
+    
+}
+#bx2>a:hover{
+    
+    border-bottom: 4px solid #381fd1;
+    
+}
+#bx1>a:hover{
+    
+    border-bottom: 4px solid #381fd1;
+    
+}
+
+
+
+
+.mainco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imgsd{
+    margin-left: -200px;
+
+}
+#imgsd>img{
+    height: 400px; 
+    width: 100%;  
+
+}
+}
+
+@media (max-width:900px) {
+    #imgsd>img{
+    height: 0px; 
+    width: 0%;  
+    opacity: 0;
+
+}
+}
+/* in a designing page we will remove the image */
+@media (max-width:900px) {
+    #imgrr>img{
+    height: 0px; 
+    width: 0%;  
+    opacity: 0;
+
+}}
+/* to remove arrow */
+@media (max-width:900px) {
+    #Arrowsheema>img{
+    height: 0Vh; 
+    width: 0%;  
+    opacity: 0;
+
+}
+
+
+}
+
+@media (max-width:600px) {
+    .conta{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    
+    .lef{
+        padding-left: 20px;
+        padding-bottom: 20px;
+         
+       
+    }
+}
+.lef>a{
+    color: #1f10a3;
+}
+.lef>a:hover{
+    border: 2px solid #1f10a3;
+    border-radius: 10px;
+    color: #1f10a3;
+}
+
+.roo:hover{
+    border: 2px solid #10284b;
+    border-radius: 20px;
+
+
+}
+@media (min-width: 850px){
+
+    #mero{
+        padding-left: 300px;
+        /* background-color: #000; */
+    }
+}
+
+#a1{
+ 
+    
+    color: #1f10a3;
+    font-size: 1vw;
+    
+
+}
+#a1:hover{
+    background-color: 
+    #1f10a3;
+    color: white;
+    
+
+}
+/* @media (min-width:900px) {
+    #Arow{
+    height: 100px; 
+    width: 100%;  
+    opacity: 1;
+    /* display: none; 
+
+}} */
+
+@media (max-width:700px) {
+  
+    #cnt{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #bro{
+        
+        
+        height: 150px;
+    }
+    #bro1{
+        
+        height: 150px;
+    }
+    #bro2{
+        
+        height: 150px;
+    }
+
+    
+    
+}
+
+#bro{
+        
+        
+        height: 200px;
+    }
+    #bro1{
+        
+        height: 200px;
+    }
+    #bro2{
+        
+        height: 200px;
+    }
+
+    @media (max-width:600px) {
+        #monda{
+            
+        }
+        .conta{
+            
+           
+            
+
+
+        }
+        
+    }

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .navbar {
+            padding: 0.5rem 0;
+        }
+        
+        .navbar-brand {
+            padding: 0;
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem !important;
+        }
+        
+        .dropdown-menu {
+            padding: 1rem;
+            border: none;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .dropdown-item {
+            padding: 0.5rem 0;
+        }
+        
+        .dropdown-item h6 {
+            font-weight: bold;
+        }
+        
+        .dropdown-item p {
+            color: #666;
+        }
+        
+        #monda {
+            min-width: 250px;
+        }
+        
+        .input__wrapper {
+            position: relative;
+            width: 100%;
+            margin: 15px 0;
+        }
+        
+        .input {
+            box-sizing: border-box;
+            color: #191919;
+            padding: 15px 15px 15px 35px;
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #d1d1d1;
+        }
+        
+        .input-icon {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+            .navbar-collapse {
+                padding-top: 1rem;
+            }
+            
+            .nav-item {
+                margin-bottom: 0.5rem;
+            }
+            
+            .dropdown-menu {
+                width: 100% !important;
+            }
+            
+            #mon {
+                height: auto !important;
+                overflow: visible !important;
+            }
+            
+            .conta {
+                flex-direction: column;
+            }
+            
+            .left, .right {
+                width: 100%;
+                padding: 0 15px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                margin-left: auto;
+            }
+            
+            .form-inline {
+                margin-top: 1rem;
+                justify-content: flex-start !important;
+            }
+            
+            .library-item {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        @media (min-width: 992px) {
+            .dropdown-menu {
+                min-width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color:#edede0; color: #381fd1;">
+        <div class="container">
+            <!-- Logo on the left -->
+            <a class="navbar-brand" href="/">
+                <svg style="color:#381fd1;" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Home">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 32C24.8366 32 32 24.8366 32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 24.8366 7.16344 32 16 32ZM15.4225 22.7124V25.607C18.1716 25.7753 20.8606 24.7551 22.806 22.8056C26.5647 19.0469 26.5647 12.9531 22.806 9.19477C22.4644 8.85297 22.0977 8.53716 21.709 8.25L19.6336 10.3252L10.3245 19.6332C8.61894 16.9674 8.99804 13.4741 11.2358 11.2362C12.6405 9.8287 14.5963 9.11525 16.5775 9.28762V6.39295C13.8284 6.22472 11.1394 7.24504 9.19403 9.19458C5.43532 12.9532 5.43532 19.047 9.19403 22.8054C9.53564 23.1472 9.90231 23.463 10.291 23.7501L12.3663 21.675L21.6754 12.3668C23.381 15.0325 23.0019 18.5259 20.7641 20.7638C19.3594 22.1713 17.4036 22.8847 15.4225 22.7124Z" fill="currentColor"></path>
+                </svg>
+            </a>
+            
+            <!-- Toggle button on the right -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar content -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 2%;">
+                    <!-- Dropdown 1 -->
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a id="navli1" style="color: #381fd1;" class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            USE CASES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div class="row row-cols-1 px-0 ms-0 gy-3">
+                                <div class="col">
+                                    <a class="dropdown-item px-0 ms-0" href="./designer.html">
+                                        <h6 class="mb-1">Designers</h6>
+                                        <p class="mb-0 small">Create accessible design on record time right in Figma and Sketch</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-item px-0 ms-0" href="./developer.html">
+                                        <h6 class="mb-1">Developers</h6>
+                                        <p class="mb-0 small">Manage accessibility in real-time in all your projects</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-item px-0 ms-0" href="productsmanag.html">
+                                        <h6 class="mb-1">Product Managers</h6>
+                                        <p class="mb-0 small">Test and audit your code from easy implementation to live products</p>
+                                    </a>
+                                </div>
+                                <div class="col">
+                                    <a class="dropdown-item px-0 ms-0" href="./complman.html">
+                                        <h6 class="mb-1">Compliance Managers</h6>
+                                        <p class="mb-0 small">Monitor, manage and audit your accessibility posture in one place</p>
+                                    </a>
+                                </div>
+                                <div class="col mt-3">
+                                    <div class="card ms-0 me-0" style="width: 100%;">
+                                        <img style="background-color: #f3f2fc; height:100px; object-fit: contain;"
+                                        src="https://images.getstark.co/marketing/accessibility-posture-white-paper/white-paper-callout.png?updatedAt=1709743608630"
+                                        class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text small">Some quick example text to build on the card title and make up the bulk of
+                                                the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item ms-lg-3">
+                        <a id="navli2" style="color: #381fd1;" class="nav-link active fw-bold" aria-current="page" href="./pricing.html">PRICING</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a id="navli3" style="color: #381fd1;" class="nav-link active fw-bold" aria-current="page" href="./Support.html">SUPPORT</a>
+                    </li>
+                    
+                    <!-- Dropdown 2 -->
+                    <li class="nav-item dropdown ms-lg-3">
+                        <a id="navli4" style="color: #381fd1;" class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            RESOURCES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <div id="mon" class="d-block flex-row flex-nowrap overflow-auto px-0 ms-0 gx-3" style="height: 400px;">
+                                <li class="px-2" style="min-width: 200px;">
+                                    <a class="dropdown-item px-0 ms-0" href="./blog.html">
+                                        <h6>Blog</h6>
+                                    </a>
+                                    <p>create accessable design on record time right in figma and skitch</p>
+                                </li>
+                                <li class="px-2" style="min-width: 200px;">
+                                    <a class="dropdown-item px-0 ms-0" href="./library.html">
+                                        <h6>Library</h6>
+                                    </a>
+                                    <p>create accessable design on record time right in figma and skitch</p>
+                                </li>
+                                <li class="px-2" style="min-width: 200px;">
+                                    <a class="dropdown-item px-0 ms-0" href="./complman.html">
+                                        <h6>The WCAG Explained</h6>
+                                    </a>
+                                    <p>create accessable design on record time right in figma and skitch</p>
+                                </li>
+                                <li class="px-2" style="min-width: 200px;">
+                                    <a class="dropdown-item px-0 ms-0" href="./Support.html">
+                                        <h6>Support Center</h6>
+                                    </a>
+                                    <p>Manage accessablity in real-time in all your projects</p>
+                                </li>
+                                <li class="px-2" style="min-width: 200px;">
+                                    <a class="dropdown-item px-0 ms-0" href="./contCTUS.html">
+                                        <h6>Community</h6>
+                                    </a>
+                                    <p>Test and audit your code from easy implimentation to live products</p>
+                                </li>
+                                <li class="px-2" style="min-width: 200px;">
+                                    <a class="dropdown-item px-0 ms-0" href="./stawpaper.html">
+                                        <h6 class="px=0">Stack White Paper</h6>
+                                    </a>
+                                    <p>Monitor,manage and audit your accessability posture in one place</p>
+                                </li>
+                                <div class="card ms-0 me-0 gx-4" style="width: 21rem; min-width: 21rem; height: 250px; position: relative;">
+                                    <img style="background-color: #f3f2fc; height:150px;"
+                                        src="https://res.cloudinary.com/stark-lab/image/upload/v1749132702/medium_Header_6cc1614a6d.png"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.</p>
+                                        <a href="#">Read more in the Blog</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <form class="d-flex my-2 my-lg-0" role="search">
+                    <a id="login" style="text-decoration: none; color: #381fd1; font-weight: bolder;"
+                    class="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] hover:border-white focus:border-white me-2"
+                    href="https://app.getstark.co/sign-in" data-radix-collection-item="">LOG IN</a>
+        
+                    <a style="text-decoration: none; font-weight: bolder;border-radius: 15px; background-color:#381fd1; color:#fff;text-transform: uppercase;"
+                    class="flex h-8 items-center whitespace-nowrap rounded-md border-2 border-transparent px-2 align-middle text-sm font-black uppercase tracking-[1.12px] transition-opacity hover:opacity-90 focus:opacity-90 text-type-purple"
+                    href="https://app.getstark.co/launch-trial" data-radix-collection-item="">Start Free Team Trial</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left sidebar - becomes full width on mobile -->
+            <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
+                <div class="left mt-5 ms-lg-5 d-flex align-items-start justify-content-center flex-column ps-3 ps-lg-5">
+                    <h5>Search Library</h5>
+                    
+                    <div class="input__wrapper">
+                        <input minlength="3" required="" id="SearchLibraryInput" class="input" value="">
+                        <svg class="input-icon" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z" fill="#381fd1"/>
+                        </svg>
+                    </div>
+                    
+                    <a class="fs-5 text-decoration-none mt-3" href="./blog.html">Home</a>
+                    <a class="fs-5 text-decoration-none mt-3" href="./sbandbiling.html">Collection</a>
+                    
+                    <div class="dropdown mt-3">
+                        <button class="btn dropdown-toggle fs-5" style="border: 2px solid black; padding: 0.25rem 1rem;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-light">
+                            <li><a class="dropdown-item" href="./terms.html">Product</a></li>
+                            <li><a class="dropdown-item" href="./privacy.html">Community</a></li>
+                            <li><a class="dropdown-item" href="contCTUS.html">Guides</a></li>
+                            <li><a class="dropdown-item" href="contCTUS.html">Interviews</a></li>
+                            <li><a class="dropdown-item" href="contCTUS.html">Case Studies</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Main content -->
+            <div class="col-lg-9 col-md-8">
+                <div class="right mt-5 ps-lg-5 pe-lg-5 ps-3 pe-3">
+                    <h1>New in the Library</h1>
+                    <p class="fs-5">Newly added accessibility resources, guides, and more.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray;">
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg" class="library-thumbnail rounded-lg" width="40" height="40" alt="DAISY Consortium">
+                                <p style="color: #381fd1;">RESOURCES</p>
+                                <h4>Inclusive Publishing</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray;">
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345933/Screenshot_2023_03_20_at_3_58_45_PM_b615f86e7e.png" class="library-thumbnail rounded-lg" width="40" height="40" alt="DAISY Consortium">
+                                <p style="color: #381fd1;">RESOURCES</p>
+                                <h4>The APLN (Accessible Publishing Learning Network)</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray;">
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345736/uni_profile_93228_9c84b19231.jpg" class="library-thumbnail rounded-lg" width="40" height="40" alt="DAISY Consortium">
+                                <p style="color: #381fd1;">RESOURCES</p>
+                                <h4>Making Accessible Books</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray;">
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1679345547/daisy_high_e2e14faca3.jpg" class="library-thumbnail rounded-lg" width="40" height="40" alt="DAISY Consortium">
+                                <p style="color: #381fd1;">RESOURCES</p>
+                                <h4>The DAISY Consortium's Accessible Publishing Knowledge Base</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray;">
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1658845042/language_please_logo_d4b822280f.png" class="library-thumbnail rounded-lg" width="40" height="40" alt="DAISY Consortium">
+                                <p style="color: #381fd1;">RESOURCES</p>
+                                <h4>Language, Please: Style Guide & Resources for journalists and storytellers</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray;">
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653070254/library_author_google_7723cb132a.png" class="library-thumbnail rounded-lg" width="40" height="40" alt="DAISY Consortium">
+                                <p style="color: #381fd1;">RESOURCES</p>
+                                <h4>4 steps to more inclusive, precise language</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <h1>Featured Collections</h1>
+                    <p class="fs-5">Handpicked and curated collections around accessibility.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray; background-color:#f6f6eb">
+                                <h4>disability Employment</h4>
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653845742/library_collection_Collection_Boundless_Disability_Employment_c297d236d9.png" class="img-fluid mt-3" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray; background-color:#e5e5e6;">
+                                <h4>Making accessible color combos</h4>
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_making_accessible_color_combos_42c8d90a99.png" class="img-fluid mt-3" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 mb-4">
+                            <div class="library-item p-3 h-100" style="border: 2px solid gray; background-color:#e5e5e6;">
+                                <h4>Tip and tricks to include social media</h4>
+                                <img src="https://res.cloudinary.com/stark-lab/image/upload/v1653845743/library_collection_Inclusive_Social_Media_b9669e6d39.png" class="img-fluid mt-3" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+  
+</body>
+</html>
